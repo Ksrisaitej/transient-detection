@@ -1,7 +1,7 @@
 import pandas as pd
 from sklearn.preprocessing import StandardScaler
 from sklearn.model_selection import train_test_split
-trained_data = pd.read_csv('transient_detection_train.csv')
+trained_data = pd.read_csv('PS2_transient_detection_train.csv')
 
 X = trained_data.drop(['label'], axis=1)
 Y = trained_data['label']
@@ -37,3 +37,6 @@ accuracy2 = accuracy_score(y_test, y_pred2)
 print("Accuracy for rbf kernel: ", round(accuracy2,3))
 
 print("\n" + "=" * 60)
+
+
+
